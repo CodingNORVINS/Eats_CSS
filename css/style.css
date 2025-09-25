@@ -36,6 +36,7 @@ body {
 	letter-spacing: 0.1px;
 	line-height: 36px;
 	font-family: var(--first-font);
+	font-weight: 700;
 }
 
 .container {
@@ -44,9 +45,9 @@ body {
 }
 
 .header {
-	padding-bottom: 41.27px;
+	padding-bottom: 42px;
 	background-color: var(--hero-title-color);
-	padding-top: 49px;
+	padding-top: 50px;
 }
 
 .header-container {
@@ -65,44 +66,45 @@ body {
 }
 
 .navigation-link {
-	font-weight: 600;
-	padding: 10px;
-	color: var(--navigation-text-color);
-	letter-spacing: 0.2px;
 	display: inline-block;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+	color: var(--navigation-text-color);
+	padding: 10px;
 	line-height: 28px;
 	font-size: 16px;
 }
-
 .hero {
+	padding-top: 78px;
 	background-repeat: no-repeat;
-	text-align: center;
-	background-position: center;
 	background-size: cover;
-	padding-bottom: 162px;
-	padding-top: 79px;
 	background-image: url('../images/hero-background.png');
+	background-position: center;
+	padding-bottom: 164px;
+	text-align: center;
 }
 
 .hero-subtitle {
 	color: var(--hero-subtitle-color);
-	padding-bottom: 1px;
+	padding-bottom: 10px;
 }
 
 .hero-title {
-	line-height: 80px;
-	color: var(--hero-title-color);
 	font-size: 58px;
-	letter-spacing: 0.2px;
-	font-family: var(--second-font);
 	margin: 0 auto;
+	line-height: 80px;
+	font-family: var(--second-font);
+	color: var(--hero-title-color);
+	padding-bottom: 10px;
+	letter-spacing: 0.2px;
 }
 
 .hero-description {
-	letter-spacing: 0.2px;
-	line-height: 38px;
-	color: var(--hero-subtitle-color);
 	padding-bottom: 54px;
+	color: var(--hero-subtitle-color);
+	font-weight: 500;
+	line-height: 38px;
+	letter-spacing: 0.2px;
 }
 
 .hero-list {
@@ -112,54 +114,59 @@ body {
 }
 
 .hero-button {
+	display: inline-block;
+	font-size: 24px;
+	color: var(--hero-title-color);
 	border-radius: 30px;
+	border: 1px solid var(--hover-color);
 	background-color: var(--hover-color);
 	font-weight: 700;
-	color: var(--hero-title-color);
-	font-size: 24px;
-	padding: 16px 58px 16px 73px;
-	border-width: 0;
+	padding: 15px 58px 15px 73px;
 }
 
 .second-hero-button {
-	border-style: solid;
-	border-color: var(--hero-title-color);
 	border-width: 1px;
-	padding-inline: 82px;
+	padding: 15px 82;
 	background-color: transparent;
+	border-color: var(--hero-title-color);
+	border-style: solid;
 }
 
 .app {
 	padding-top: 56px;
-	padding-bottom: 190.78px;
+	padding-bottom: 190px;
 }
 
 .app-list {
-	padding-left: 84px;
-	padding-right: 71px;
-	display: flex;
 	flex-wrap: wrap;
+	padding-left: 84px;
+	display: flex;
 	gap: 108px;
+	padding-right: 71px;
 }
 
 .app-item {
 	display: flex;
 	gap: 287px;
 	align-items: center;
+	justify-content: space-between;
+}
+
+.app-item:nth-child(1) {
+	padding-bottom: 109px;
 }
 
 .app-item:nth-child(2) {
 	flex-direction: row-reverse;
-	gap: 250px;
 }
 
 .app-title {
-	padding-bottom: 70px;
-	text-align: center;
-	font-weight: 600;
-	font-family: var(--second-font);
+	letter-spacing: 0.2px;
+	color: var(--text-color);
+	line-height: 57px;
+	font-size: 40px;
+	padding-bottom: 17px;
 	color: var(--titles-color);
-	font-size: 44px;
 }
 
 .app-subtitle {
@@ -168,96 +175,81 @@ body {
 }
 
 .app-item-title {
-	font-size: 40px;
-	line-height: 57px;
 	color: var(--navigation-text-color);
+	line-height: 57px;
 	letter-spacing: 0.2px;
 	padding-bottom: 17px;
+	font-size: 40px;
 }
 
-.app-desk {
+.app-description {
+	font-weight: 500;
 	color: var(--app-description);
-	line-height: 38px;
 	letter-spacing: 0.2px;
-	max-width: 480px;
+	line-height: 38px;
 }
 
 .shop {
 	background-position: center;
-	background-repeat: no-repeat;
+	background: url('../images/shop-background.png') center/cover no-repeat;
+	padding: 141px 0 130px;
 	text-align: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 140px;
-	padding-bottom: 131px;
-	background-image: url('../images/shop-background.png');
 }
 
 .shop-title {
 	color: var(--hero-title-color);
-	font-size: 40px;
-	line-height: 57px;
 	letter-spacing: 0.2px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	line-height: 57px;
+	font-size: 40px;
 }
 
 .shop-description {
-	line-height: 38px;
-	padding-bottom: 59px;
 	color: var(--hero-title-color);
+	padding-bottom: 60px;
+	line-height: 38px;
+	font-weight: 500;
 	letter-spacing: 0.2px;
-	font-size: 24px;
 }
 
 .shop-list {
 	display: flex;
-	gap: 16px;
 	justify-content: center;
+	gap: 16px;
 }
 
 .shop-button {
-	font-weight: 700;
-	padding-left: 31px;
 	border-radius: 10px;
-	background-color: var(--hover-color);
-	padding-bottom: 18px;
 	color: var(--hero-title-color);
-	letter-spacing: 0.2px;
-	padding-right: 31px;
+	display: inline-block;
+	border: 1px solid var(--hover-color);
+	padding: 16px 31px;
+	line-height: 28px;
 	font-size: 16px;
-	padding-top: 18px;
-	border-width: 0;
+	letter-spacing: 0.2px;
+	background-color: var(--hover-color);
 }
 
 .shop-button-right {
+	border: 1px solid var(--hero-title-color);
 	padding: 16px 45px;
-	font-weight: 700;
-	border-color: var(--hero-title-color);
 	background-color: transparent;
-	font-size: 16px;
-	color: var(--hero-title-color);
-	border-style: solid;
-	letter-spacing: 0.2px;
-	border-width: 1px;
 }
 
 .footer {
-	background-color: var(--hero-title-color);
-	padding-top: 114px;
-	padding-bottom: 58px;
+	padding: 115px 0 58px;
 }
 
 .footer-container {
-	align-items: center;
-	justify-content: space-between;
 	display: flex;
-	padding-left: 24px;
-	background-color: var(--hero-title-color);
+	justify-content: space-between;
+	align-items: center;
 }
-
 .footer-description {
 	font-size: 12px;
 	line-height: 18px;
-	font-weight: 700;
 	color: var(--footer-description-color);
 	font-family: var(--third-font);
 }
