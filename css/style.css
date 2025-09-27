@@ -13,20 +13,6 @@
 	--order-bg-color: rgba(37, 43, 66, 0.4);
 }
 
-.title,
-.subtitle {
-	font-weight: 700;
-}
-
-.subtitle {
-	font-size: 24px;
-}
-
-.description {
-	font-weight: 500;
-	font-size: 24px;
-}
-
 * {
 	box-sizing: border-box;
 	text-decoration: none;
@@ -170,7 +156,7 @@ body {
 }
 
 .app-subtitle {
-	padding-bottom: 7px;
+	padding-bottom: 17px;
 	color: var(--hover-color);
 }
 
@@ -245,4 +231,5 @@ body {
 	font-family: var(--third-font);
 	line-height: 18px;
 	font-size: 12px;
+	font-weight: 500;
 }
